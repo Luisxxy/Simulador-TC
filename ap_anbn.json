@@ -1,0 +1,16 @@
+{
+  "estados": ["q0", "q1", "q2"],
+  "alfabeto": ["a", "b"],
+  "alfabeto_pilha": ["A", "Z"],
+  "estado_inicial": "q0",
+  "simbolo_inicial_pilha": "Z",
+  "estados_finais": ["q2"],
+  "aceitacao": "estado_final",
+  "transicoes": [
+    {"de": "q0", "le": "a", "desempilha": "Z", "para": "q0", "empilha": "AZ"},
+    {"de": "q0", "le": "a", "desempilha": "A", "para": "q0", "empilha": "AA"},
+    {"de": "q0", "le": "b", "desempilha": "A", "para": "q1", "empilha": "λ"},
+    {"de": "q1", "le": "b", "desempilha": "A", "para": "q1", "empilha": "λ"},
+    {"de": "q1", "le": "λ", "desempilha": "Z", "para": "q2", "empilha": "Z"}
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "variaveis": ["S"],
+  "terminais": ["(", ")"],
+  "simbolo_inicial": "S",
+  "producoes": ["S -> SS | (S) | λ"]
+}
